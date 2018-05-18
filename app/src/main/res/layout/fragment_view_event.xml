@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/faq_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin30"
+        android:fontFamily="@font/lemon_milk_bold"
+        android:padding="@dimen/margin10"
+        android:text="Events"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize25" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_msg"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:fontFamily="@font/elliot_sans_regular"-->
+    <!--android:padding="@dimen/margin10"-->
+    <!--android:text="Coming Soon..."-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/textsize18"-->
+    <!--android:visibility="gone" />-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/rv_events"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/margin5" />-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_dates" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_dates"
+        style="@style/MineCustomTabText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_label"
+        android:layout_gravity="top"
+        app:tabGravity="fill"
+        app:tabMode="fixed" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin220"
+        android:layout_below="@id/tab_dates"
+        android:visibility="visible">
+
+        <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/margin220" />-->
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin20"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/margin15"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp" />
+
+        <TextView
+            android:id="@+id/tv_stage_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="@dimen/margin15"
+            android:background="@drawable/bg_rounded_right_white"
+            android:fontFamily="@font/lemon_milk_light"
+            android:paddingBottom="@dimen/margin5"
+            android:paddingLeft="@dimen/margin8"
+            android:paddingRight="@dimen/margin8"
+            android:paddingTop="@dimen/margin5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize16" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

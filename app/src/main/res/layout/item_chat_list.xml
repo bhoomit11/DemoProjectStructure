@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin5"
+    android:gravity="center_vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginRight="@dimen/margin70"
+        android:background="@drawable/chat_bg_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin5"
+            android:fontFamily="@font/elliot_sans_regular"
+            android:text=""
+            android:padding="@dimen/margin5"
+            android:textColor="@color/colorAccent"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/textsize16" />
+
+        <TextView
+            android:id="@+id/tv_other_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin5"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:fontFamily="@font/elliot_sans_regular"
+            android:layout_gravity="right"
+            android:text="21-Dec 7:00 pm"
+            android:textColor="#8008354B"
+            android:textSize="@dimen/textsize10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/margin70"
+        android:background="@drawable/chat_bg_brown"
+        android:gravity="right|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin5"
+            android:layout_marginRight="@dimen/margin5"
+            android:layout_marginTop="@dimen/margin5"
+            android:fontFamily="@font/elliot_sans_regular"
+            android:text=""
+            android:padding="@dimen/margin5"
+            android:textColor="@color/colorPrimary"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/textsize16" />
+
+        <TextView
+            android:id="@+id/tv_me_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin5"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:fontFamily="@font/elliot_sans_regular"
+            android:gravity="right"
+            android:text="21-Dec 7:00 pm"
+            android:textColor="#8008354B"
+            android:textSize="@dimen/textsize10" />
+
+    </LinearLayout>
+</RelativeLayout>

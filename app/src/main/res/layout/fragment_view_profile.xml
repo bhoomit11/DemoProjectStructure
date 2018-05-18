@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/faq_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin30"
+        android:layout_marginRight="@dimen/margin30"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_square_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/margin15">
+
+            <ImageView
+                android:id="@+id/iv_user_image"
+                android:layout_width="@dimen/image_height_width"
+                android:layout_height="@dimen/image_height_width"
+                android:src="@drawable/user" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bnt_height_30"
+                    android:background="@drawable/edit_text_base"
+                    android:fontFamily="@font/elliot_sans_regular"
+
+                    android:hint="Full Name"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:paddingLeft="@dimen/margin10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize12" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bnt_height_30"
+                    android:background="@drawable/edit_text_base"
+                    android:focusable="false"
+                    android:fontFamily="@font/elliot_sans_regular"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="100"
+                    android:paddingLeft="@dimen/margin10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize12" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bnt_height_30"
+                    android:background="@drawable/edit_text_base"
+                    android:focusable="false"
+                    android:fontFamily="@font/elliot_sans_regular"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/margin10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize12" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rg_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Male"
+                        android:textSize="@dimen/textsize12" />
+
+                    <RadioButton
+                        android:id="@+id/rb_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textSize="@dimen/textsize12" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bnt_height_30"
+                    android:layout_marginRight="@dimen/margin2"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/edit_text_base">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/margin2"
+                        android:layout_toLeftOf="@+id/iv_drop"
+                        app:hintEnabled="false">
+
+                        <EditText
+                            android:id="@+id/et_Country"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/bnt_height_30"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:fontFamily="@font/elliot_sans_regular"
+                            android:hint="Country"
+                            android:maxLength="100"
+                            android:paddingLeft="@dimen/margin10"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textsize12" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_drop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin5"
+                        android:layout_marginRight="@dimen/margin5"
+                        android:padding="@dimen/margin5"
+                        android:src="@drawable/dropdown" />
+
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin2"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:layout_weight="0.5"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/et_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bnt_height_30"
+                        android:background="@drawable/edit_text_base"
+                        android:fontFamily="@font/elliot_sans_regular"
+                        android:hint="City"
+                        android:maxLength="30"
+                        android:paddingLeft="@dimen/margin10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin30"
+                android:layout_marginTop="@dimen/margin5"
+                android:background="@drawable/base_dob_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/elliot_sans_regular"
+                    android:text="DOB"
+                    android:textSize="@dimen/textsize12" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin5"
+                        android:src="@drawable/calendar_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/elliot_sans_regular"
+                        android:text="---/--/----"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize12" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin5"
+                        android:padding="@dimen/margin5"
+                        android:src="@drawable/dropdown" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_friend_noti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receive notifications for friend requests   "
+                    android:textColor="@color/black"
+                    android:layout_gravity="right"
+                    android:textSize="@dimen/textsize12"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:fontFamily="@font/elliot_sans_regular"/>
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bnt_height_30"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@drawable/base_accent_btn"
+                android:fontFamily="@font/elliot_sans_regular"
+                android:text="Submit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textsize12" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

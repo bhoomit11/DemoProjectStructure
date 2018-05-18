@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_artistlist"/>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin80"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lemon_milk_bold"
+            android:textSize="@dimen/textsize25"
+            android:text="TIMEOUT72 DAY PASSES"
+            android:padding="@dimen/margin10"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+        <View
+
+            android:layout_width="@dimen/margin150"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/margin5"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_passes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin10"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_buy"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/margin20">
+
+                <Button
+                    android:id="@+id/buy_ticket"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="BUY TICKETS"
+                    android:textSize="@dimen/textsize18"
+                    android:background="@drawable/bg_white_border"
+                    android:fontFamily="@font/lemon_milk_light"
+                    android:textColor="@color/white"
+                    />
+
+                <Button
+                    android:id="@+id/buy_packages"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="BUY PACKAGES"
+                    android:fontFamily="@font/lemon_milk_light"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize18"
+                    android:background="@drawable/bg_white_border"
+                    android:layout_marginLeft="@dimen/margin15"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin10"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/img_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:minHeight="@dimen/margin220"
+        android:src="@drawable/default_user"
+        android:transitionName="logoTransitionName"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/lemon_milk_bold"
+        android:padding="@dimen/margin5"
+        android:gravity="center"
+        android:layout_marginTop="-50dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize25" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:layout_marginTop="@dimen/margin20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/elliot_sans_regular"
+                android:paddingTop="@dimen/margin10"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="@dimen/textsize12" />
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/elliot_sans_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize12" />
+
+            <View
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin50" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

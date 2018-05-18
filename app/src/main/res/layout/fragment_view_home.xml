@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_artistlist"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin35"
+        android:src="@drawable/timeout_log_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin20"
+            android:layout_marginLeft="@dimen/margin20"
+            android:layout_marginTop="@dimen/margin20"
+            android:background="@color/white"></View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon_milk"
+                android:text="3 Days"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon_milk"
+                android:text="3 Stages"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon_milk"
+                android:text="27-29 DEC"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon_milk"
+                android:text="GOA"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize30" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin30"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal"
+      >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon_milk_light"
+                android:padding="@dimen/margin10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon_milk_light"
+                android:text="Days"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin10"
+            android:background="@color/white"></View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon_milk_light"
+                android:padding="@dimen/margin10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon_milk_light"
+                android:text="Hours"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize14" />
+
+            <TextView
+                android:id="@+id/tv_minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon_milk_light"
+                android:padding="@dimen/margin10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon_milk_light"
+                android:text="Minutes"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize14" />
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon_milk_light"
+                android:padding="@dimen/margin10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon_milk_light"
+                android:text="Seconds"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black50"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin10"
+            android:paddingTop="@dimen/margin10"
+            android:text="What's Happening Now..."
+            android:textStyle="bold"
+            android:fontFamily="@font/elliot_sans_regular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize18"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin90"
+            android:layout_marginTop="@dimen/margin5"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+        </android.support.v4.view.ViewPager>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_dots"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin20"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin5"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

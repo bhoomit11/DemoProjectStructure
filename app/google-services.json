@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "249700449752",
+    "firebase_url": "https://fir-timeout72.firebaseio.com",
+    "project_id": "firebase-timeout72",
+    "storage_bucket": "firebase-timeout72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249700449752:android:f19c7999f28abdf2",
+        "android_client_info": {
+          "package_name": "com.timeout72hours"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249700449752-mbunv2o4ddj5vh3agcrs0arj4gdch6ft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.timeout72hours",
+            "certificate_hash": "25bd2c14904f7c2354900b76ceba91ffb9cb5cb2"
+          }
+        },
+        {
+          "client_id": "249700449752-09qs3me0442b0j07plqevovfv0sckgf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.timeout72hours",
+            "certificate_hash": "95121a0d132c7e55b0622e6cdc45bd15c6c7c0c0"
+          }
+        },
+        {
+          "client_id": "249700449752-0dm56solljp31h2ml3t2nvid2qh455pe.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "249700449752-gbjeei1p8iqk1hdudjfonu9oncps8s7a.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "249700449752-qp6o80aboctdak6dctnif3vmpe2ug1p7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.timeout72hours",
+            "certificate_hash": "98ef0570be79c61115af225edc696af03096a1fe"
+          }
+        },
+        {
+          "client_id": "249700449752-4huea1hrqr98nv30k9b2rlrf3t2196vf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-o3Hwm59_2r1ODgjC39ge7G3Mu1dQQpc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249700449752-0dm56solljp31h2ml3t2nvid2qh455pe.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "249700449752-kvncpb49rvi1o5bgdqv9udn9hi8dlb2e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.google.samples.quickstart.SignInExample"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

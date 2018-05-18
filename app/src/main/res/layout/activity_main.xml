@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/dl_home"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"></FrameLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_marginTop="@dimen/margin20"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent">
+
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="@dimen/bnt_height_40"
+            android:layout_height="@dimen/bnt_height_40"
+            android:padding="@dimen/margin5"
+            android:src="@drawable/img_dashboard_menu" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>
+
+
+<android.support.design.widget.NavigationView
+    android:id="@+id/navigation_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:layout_gravity="start">
+
+    <fragment
+        android:id="@+id/menu_content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.timeout72hours.fragment.MenuFragment"/>
+
+</android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+

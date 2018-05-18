@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin5"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin10">
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/elliot_sans_regular"
+                android:textSize="@dimen/textsize14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="to"
+                android:fontFamily="@font/elliot_sans_regular"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/textsize14"/>
+
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/elliot_sans_regular"
+                android:textSize="@dimen/textsize14"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/margin50"
+            android:background="@color/colorAccent"
+            android:layout_toRightOf="@+id/ll_left"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin10"/>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin10">
+
+            <TextView
+                android:id="@+id/tv_event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/elliot_sans_regular"
+                android:textSize="@dimen/textsize16"/>
+
+            <TextView
+                android:id="@+id/tv_artist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/elliot_sans_regular"
+                android:layout_marginTop="@dimen/margin5"
+                android:textSize="@dimen/textsize14"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_artist"
+            android:layout_width="@dimen/margin70"
+            android:layout_height="@dimen/margin70"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin5"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgrey"
+        android:layout_marginTop="@dimen/margin8"/>
+
+</LinearLayout>

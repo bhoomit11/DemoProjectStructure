@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textsize10">13sp</dimen>
+    <dimen name="textsize12">16sp</dimen>
+    <dimen name="textsize14">17sp</dimen>
+    <dimen name="textsize16">21sp</dimen>
+    <dimen name="textsize18">23sp</dimen>
+    <dimen name="textsize20">25sp</dimen>
+    <dimen name="textsize25">31sp</dimen>
+    <dimen name="textsize30">37sp</dimen>
+    <dimen name="textsize35">45sp</dimen>
+
+    <dimen name="margin2">4dp</dimen>
+    <dimen name="margin5">8dp</dimen>
+    <dimen name="margin8">11dp</dimen>
+    <dimen name="margin10">14dp</dimen>
+    <dimen name="margin15">20dp</dimen>
+    <dimen name="margin20">25dp</dimen>
+    <dimen name="margin30">37dp</dimen>
+    <dimen name="margin35">45dp</dimen>
+    <dimen name="margin40">50dp</dimen>
+    <dimen name="margin50">63dp</dimen>
+    <dimen name="margin70">90dp</dimen>
+    <dimen name="margin80">100dp</dimen>
+    <dimen name="margin90">120dp</dimen>
+    <dimen name="margin120">160dp</dimen>
+    <dimen name="margin150">200dp</dimen>
+    <dimen name="margin170">220dp</dimen>
+    <dimen name="margin220">220dp</dimen>
+    <dimen name="margin250">400dp</dimen>
+
+    <dimen name="bnt_height_30">37dp</dimen>
+    <dimen name="bnt_height_35">44dp</dimen>
+    <dimen name="bnt_height_40">50dp</dimen>
+    <dimen name="bnt_height_55">68dp</dimen>
+    <dimen name="bnt_height_65">80dp</dimen>
+    <dimen name="bnt_height_100">150dp</dimen>
+
+    <dimen name="bnt_width_80">100dp</dimen>
+    <dimen name="bnt_width_60">80dp</dimen>
+
+    <dimen name="image_height_width">90dp</dimen>
+    <dimen name="image_height_width180">280dp</dimen>
+
+
+    <dimen name="menu_image_height_width20">27dp</dimen>
+
+
+</resources>

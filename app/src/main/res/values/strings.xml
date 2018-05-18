@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Timeout72</string>
+
+    <string name="facebook_app_id">181454172434600</string>
+
+    <string name="apiErrorMsg">Something is wrong, Please try again later!</string>
+    <string name="internetErrorMsg">Please check your internet connection!</string>
+
+    <string name="google_maps_key">AIzaSyBQqpjcJ8QrBoQrfUXuI33k1DhydNB8U74</string>
+
+
+</resources>
